@@ -47,13 +47,11 @@ phases:
 reports:
   jacoco-report:
     files:
-      # - 'target/site/jacoco/jacoco.xml'
-      - 'target/jacoco.xml'
+      - 'target/site/jacoco/jacoco.xml'
     file-format: 'JACOCOXML'
   junit-report:
     files:
-      # - 'target/surefire-reports/*.xml'
-      - 'target/*.xml'
+      - 'target/surefire-reports/*.xml'
     file-format: 'JUNITXML'
       # - location
     #base-directory: location
