@@ -36,7 +36,7 @@ phases:
   build:
     commands:
       - mvn compile
-      # - mvn test
+      - mvn test
       - mvn install
       # - command
   post_build:
@@ -47,11 +47,13 @@ phases:
 reports:
   jacoco-report:
     files:
-      - 'target/site/jacoco/jacoco.xml'
+      # - 'target/site/jacoco/jacoco.xml'
+      - 'target/jacoco.xml'
     file-format: 'JACOCOXML'
   junit-report:
     files:
-      - 'target/surefire-reports/*.xml'
+      # - 'target/surefire-reports/*.xml'
+      - 'target/*.xml'
     file-format: 'JUNITXML'
       # - location
     #base-directory: location
